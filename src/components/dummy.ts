@@ -1,2 +1,1 @@
-import React from 'react';
-// Dummy
+// Placeholder component file
