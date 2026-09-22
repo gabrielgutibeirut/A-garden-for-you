@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 export function GiantSunflower() {
@@ -26,7 +26,9 @@ export function GiantSunflower() {
             ease: "power2.inOut"
         });
 
-        return () => tl.kill();
+        return () => {
+    tl.kill();
+};
     }, []);
 
     return (
